@@ -3849,3 +3849,5 @@
 			<key>Name</key><string>HBO Special</string>
 			<key>Artist</key><string>Dave Chapelle</string>
 			<key>Genre</key><string>Comedy</str
+				<!--The settings below in SimpleXMLParser.java wont allow this file to be parsed -->
+				<!-- DocumentBuilderFactory factory; factory.setValidating(true);  -->
