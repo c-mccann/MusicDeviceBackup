@@ -43,4 +43,13 @@ public class PlaylistItemEntity implements Serializable {
     public void setPlaylistId(Integer playlistId) {
         this.playlistId = playlistId;
     }
+
+    @Override
+    public String toString() {
+        return "PlaylistItemEntity{" +
+                "id=" + id +
+                ", trackId=" + trackId +
+                ", playlistId=" + playlistId +
+                '}';
+    }
 }

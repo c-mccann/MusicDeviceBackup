@@ -1,0 +1,33 @@
+
+/* http://stackoverflow.com/questions/17067294/html-table-with-100-width-with-vertical-scroll-inside-tbody */
+/* https://www.w3schools.com/css/tryit.asp?filename=trycss_table_fancy */
+thead, tbody { display: block; }
+
+tbody {
+    height: 500px;
+    overflow-y: scroll;    /* Trigger vertical scroll    */
+    overflow-x: scroll;  /* Hide the horizontal scroll */
+}
+
+
+#libraryTableBody {
+    border-collapse: collapse;
+    width: 100%;
+}
+#libraryTableBody td, #libraryTableBody th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+#libraryTableBody th{
+    background-color: darkturquoise;
+    color: white;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    display: table-header-group;
+}
+
+#libraryTableBody tr:nth-child(even){background-color: #FAF6DF;}
+
+#libraryTableBody tr:hover {background-color: #ddd;}
+

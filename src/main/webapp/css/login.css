@@ -1,0 +1,66 @@
+
+html *
+{
+    font-size: 1em !important;
+    color: #000 !important;
+    font-family: Helvetica !important;
+    background-color: darkturquoise;
+
+}
+#loginDiv {
+    alignment: center;
+    position: absolute;
+    top:50%;
+    left: 37.5%;
+    width: 600px;
+    height: 400px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 30px !important;
+}
+
+
+
+.myButton{
+    width: 26.45%;
+    background-color: darkturquoise;
+    font-size: 16px;
+}
+
+.myButton:hover{
+    background-color: aqua;
+}
+
+/* all css below comes from: http://callmenick.com/post/various-css-input-text-styles */
+input[type="text"],
+input[type="password"] {
+    display: block;
+    background-color: white;
+    margin: 0;
+    width: 50%;
+    font-family: sans-serif;
+    font-size: 18px;
+    appearance: none;
+    box-shadow: none;
+    border-radius: none;
+}
+input[type="text"]:focus,
+input[type="password"]:focus{
+    outline: none;
+}
+
+.glow input[type="text"],
+.glow input[type="password"]{
+    padding: 10px;
+    border: solid 1px #dcdcdc;
+    transition: box-shadow 0.3s, border 0.3s;
+}
+.glow input[type="text"]:focus,
+.glow input[type="password"]:focus{
+    /*border: solid 1px #707070;*/
+    /*box-shadow: 0 0 5px 1px #969696;*/
+    border: solid 1px deeppink;
+    box-shadow: 0 0 5px 1px deeppink;
+}

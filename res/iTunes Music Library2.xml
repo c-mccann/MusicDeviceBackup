@@ -55509,8 +55509,7 @@
 				<integer>4222</integer>
 				<key>Playlist Persistent ID</key>
 				<string>15BAA719455834E9</string>
-				<key>All Items</key>
-				<true/>
+				<key>All Items</key><true/>
 				<key>Playlist Items</key>
 				<array>
 					<dict>

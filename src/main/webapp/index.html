@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DT340A - Distributed Systems & Security - Music Device Backup</title>
+
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+    <script src="js/jquery.min.js"></script>
+
+
+    <script type="text/javascript" src="js/login.js"></script>
+    <script type="text/javascript" src="js/register.js"></script>
+    <script type="text/javascript" src="js/user.js"></script>
+
+    <link rel ="stylesheet" type ="text/css" href ="css/login.css" />
+
+</head>
+<body>
+
+<h1 align="center">Music Device Backup</h1><br><br>
+<div align="center">
+    <img src="img/bass-clef.png" height="10%" width="10%">
+</div>
+
+<div id="loginDiv">
+
+    <form method="post" action="/music-device-backup-1.0/UserSessionServlet" class="glow">
+        <input type="text" name="username" placeholder="username" id="usernameInput" >
+        <br>
+        <input type="password" name="password" placeholder="password" id="passwordInput">
+        <br>
+        <input type="submit" value="login" onclick="login()" class="myButton">
+        <input type="button" value="register" onclick="register()" class="myButton">
+    </form>
+</div>
+
+
+
+</body>
+</html>

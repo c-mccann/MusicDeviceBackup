@@ -1,9 +1,6 @@
 package carlmccann2.distsys.caone.entities;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.io.Serializable;
 
 /**
@@ -12,25 +9,27 @@ import java.io.Serializable;
 @Entity
 @Table(name="playlists")
 public class PlaylistEntity implements Serializable {
-    @Id
-    @Column(name="playlist_id") private Integer playlistId;
     @Column(name="name") private String name;
     @Column(name="master")  private boolean master;
+    @Id
+    @Column(name="playlist_id") private Integer playlistId;
     @Column(name="playlist_persistent_id")  private String playlistPersistentId;
     @Column(name="visible") private boolean visible;
     @Column(name="all_items") private boolean allItems;
+    @Column(name="user_id") private Integer userId;
 
     public PlaylistEntity() {
     }
 
     public PlaylistEntity(Integer playlistId, String name, boolean master,
-                          String playlistPersistentId, boolean visible, boolean allItems) {
+                          String playlistPersistentId, boolean visible, boolean allItems, Integer userId) {
         this.playlistId = playlistId;
         this.name = name;
         this.master = master;
         this.playlistPersistentId = playlistPersistentId;
         this.visible = visible;
         this.allItems = allItems;
+        this.userId = userId;
     }
 
     public Integer getPlaylistId() {
@@ -79,5 +78,26 @@ public class PlaylistEntity implements Serializable {
 
     public void setAllItems(boolean allItems) {
         this.allItems = allItems;
+    }
+
+    public Integer getUserId() {
+        return userId;
+    }
+
+    public void setUserId(Integer userId) {
+        this.userId = userId;
+    }
+
+    @Override
+    public String toString() {
+        return "PlaylistEntity{" +
+                "name='" + name + '\'' +
+                ", master=" + master +
+                ", playlistId=" + playlistId +
+                ", playlistPersistentId='" + playlistPersistentId + '\'' +
+                ", visible=" + visible +
+                ", allItems=" + allItems +
+                ", userId=" + userId +
+                '}';
     }
 }
